@@ -9,7 +9,7 @@
 %------------------------------------------------------------------------------
 %------------------------------------------------------------------------------
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,1pt]{article}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -34,6 +34,7 @@
 % \usepackage{roboto}
 % \usepackage[sfdefault,medium]{InriaSans}
 \usepackage[default]{sourcesanspro}
+\usepackage{graphicx}
 
 % Serif Fonts
 % \usepackage{CormorantGaramond}
@@ -73,7 +74,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large
+  \vspace{-5pt}\scshape\raggedright\LARGE
 }{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -97,7 +98,7 @@
 
 % Resume Item
 \newcommand{\resumeItem}[1]{
-  \item{
+  \item\large{
     {#1 \vspace{-4pt}}
   }
 }
@@ -105,7 +106,7 @@
 % Titles
 \newcommand{\titleItem}[1]{
   % \textsl{\textbf{#1}}
-  \textbf{#1}
+  \large\textbf{#1}
 }
 
 
@@ -119,9 +120,9 @@
 
 % Resume Subheading
 \newcommand{\resumeSubheading}[4]{
-  \item
+  \item\large
      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l@{}l}     
-      {#1} & \titleItem{#3} | {#2} & \textit{#4}\\
+      {#1} & \titleItem{#3} | {#2} & \textit{\large #4}\\
     \end{tabular*}\vspace{-10pt}
 }
 
@@ -147,7 +148,7 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & \textit{ #2} \\
+      #1 & \textit{\large #2} \\
     \end{tabular*}\vspace{-9pt}
 }
 
@@ -174,15 +175,16 @@
 % -------------------------------------
 
 \begin{flushleft}
-    \textbf{\large Huy, Tran Nhat} \\    
-    \textit{Ho Chi Minh City, Vietnam} $|$ 
-    \textit{0354878677} $|$  
-    % \href{https://website}{{\textit{@website}}} $|$
-    \href{mailto:nhathuy13598@gmail.com}{{\textit{nhathuy13598@gmail.com}}} $|$ 
-    % \href{https://www.linkedin.com/in/tr%E1%BA%A7n-nh%E1%BA%ADt-huy-465912143}{{\textit{https://www.linkedin.com/in/nhathuy13598}}} $|$
-    \href{https://github.com/nhathuy13598}{{\textit{https://github.com/nhathuy13598}}}
+    \textbf{\huge Huy, Tran Nhat} \\    
+    \textit{Location: Ho Chi Minh City, Vietnam} \\
+    \textit{Phone: 0354878677} \\ 
+    % \href{https://website}{{\textit{@website}}} \\
+    \href{mailto:nhathuy13598@gmail.com}{{\textit{Mail: nhathuy13598@gmail.com}}} \\
+    % \href{https://www.linkedin.com/in/tr%E1%BA%A7n-nh%E1%BA%ADt-huy-465912143}{{\textit{https://www.linkedin.com/in/nhathuy13598}}} \\
+    \href{https://github.com/nhathuy13598}{{\textit{Github: https://github.com/nhathuy13598}}}
     \vspace{-8pt}
 \end{flushleft}
+
 
 % -------------------------------------
 %---------- PROFESSIONAL SUMMARY ------
@@ -192,7 +194,7 @@
 \vspace{-3pt}
 \begin{itemize}[leftmargin=0.15in, label={}]
     {\item{
-     {I'm eager to translate my programming skills into a fulfilling career as a professional programmer.} \\      
+     {\large I thrive in environments that present new challenges and opportunities to learn and grow. My expertise lies in C++ skills, object-oriented programming, memory management, performance optimization. I'm eager to leverage my existing skillset and continuously expand my tech stack to contribute to a challenging and innovative environment.} \\      
     }}
  \end{itemize}
  \sectionspace
@@ -243,7 +245,7 @@
       \resumeProjectHeading
            {\titleItem{{Software Engineer}} $|$ \emph{LARION}}{Jun 2022 -- Present}
       \resumeItemListStart
-        \resumeItem{Building data pipelines: As a data engineer, I develop pipelines to transform multi-format data (XML, JSON, CSV, etc.) into a unified, structured format for efficient downstream analysis by other teams.}
+        \resumeItem{I build high-performance data pipelines that ingest data in various formats (XML, JSON, CSV) and transform it into a structured format for real-time analysis used in high-frequency trading (HFT).}
         \resumeItem{Skills: C++, Python, Django, FastAPI}
         % \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
       \resumeItemListEnd
@@ -311,12 +313,14 @@
             \resumeItemListStart
             \resumeItem{I'm passionate about developer efficiency! I built and maintain the Autotask extension for VSCode, an open-source tool that helps users automate tasks and customize their coding experience.}
             % \resumeItem{Ut consequat semper viverra nam libero justo laoreet sit amet. Feugiat nisl pretium fusce id velit ut tortor pretium.}
+            \resumeItem{Project link: \href{https://github.com/ludenstian/autotask}{https://github.com/ludenstian/autotask}}
            \resumeItemListEnd
        \resumeProjectHeading
            {\titleItem{\href{https://nhathuy13598.itch.io/break-finger}{Break Finger}} $|$ \emph{Python, Pygame}}{Nov 2018}
             \resumeItemListStart
             \resumeItem{Born during Game Off 2018: This Python game, built with Pygame, was my creation for the game jam!} 
             % \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor. }
+            \resumeItem{Project link: \href{https://github.com/nhathuy13598/Break-Finger}{https://github.com/nhathuy13598/Break-Finger}}
            \resumeItemListEnd
        \resumeProjectHeading
            {\titleItem{Paint Application} $|$ \emph{C\#, SharpGL}}{Feb 2018 -- Mar 2018}
