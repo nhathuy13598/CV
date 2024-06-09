@@ -120,7 +120,7 @@
 
 % Resume Subheading
 \newcommand{\resumeSubheading}[4]{
-  \item\large
+  \item\Large
      \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l@{}l}     
       {#1} & \titleItem{#3} | {#2} & \textit{\large #4}\\
     \end{tabular*}\vspace{-10pt}
@@ -167,7 +167,8 @@
 %-------------------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %-------------------------------------------------------
-
+\usepackage{setspace}
+\onehalfspacing 
 \begin{document}
 
 % -------------------------------------
@@ -194,7 +195,7 @@
 \vspace{-3pt}
 \begin{itemize}[leftmargin=0.15in, label={}]
     {\item{
-     {\large I thrive in environments that present new challenges and opportunities to learn and grow. My expertise lies in C++ skills, object-oriented programming, memory management, performance optimization. I'm eager to leverage my existing skillset and continuously expand my tech stack to contribute to a challenging and innovative environment.} \\      
+     {\large I thrive in environments that present new challenges and opportunities to learn and grow. I have been working in high-performance applications. My expertise lies in C++, object-oriented programming, memory management, performance optimization. I'm eager to leverage my existing skillset, continuously expand my tech stack to contribute to a challenging and innovative ideas.} \\      
     }}
  \end{itemize}
  \sectionspace
@@ -208,9 +209,9 @@
     \resumeSubHeadingListStart
       \resumeProjectHeading
           % {\titleItem{Star Award} \emph{ $|$ Company 1}}{September 2018}
-          {\titleItem{IELTS 6.5} \emph{ $|$ IDP Education Vietnam}}{Feb 2016}
+          {\titleItem{IELTS 6.5} \emph{ $|$ IDP Education Vietnam}}{\textbf{Feb 2016}}
       \resumeProjectHeading
-          {\titleItem{Problem Solving (Basic)} \emph{ $|$ HackerRank}}{Sep 2020}
+          {\titleItem{Problem Solving (Basic)} \emph{ $|$ HackerRank}}{\textbf{Sep 2020}}
       % \resumeProjectHeading
       %     {\titleItem{IBM Full Stack Software Developer} \emph{$|$ IBM}}{November 2023}
       % \resumeProjectHeading
@@ -224,11 +225,12 @@
 \subheadingtitlevspace
  \begin{itemize}[leftmargin=0.15in, label={}]
     {\item{
-     \titleItem{Languages}{: C/C++, Python, JavaScript, TypeScript} \\
+     \titleItem{Languages}{: C/C++ version 11-14-17, C\#, Python, JavaScript, TypeScript, Java} \\
+     \titleItem{Database}{: SQLite, MongoDB} \\
      \titleItem{Frameworks}{: Node.js, fastAPI, Django, ExpressJS} \\
      % \titleItem{DevOps and API Tools}{: IIS, Git, Docker, OpenShift, Kubernetes, Azure DevOps, TFS, Octopus Deploy, Swagger, Postman} \\
      % \titleItem{Cloud and Security Tools}{: IBM Cloud, AWS, Azure Cloud, SQL Server, SSIS, SSRS, Linux (Configuring and Managing)} \\
-     \titleItem{Others}{: SOLID, Design Patterns}
+     \titleItem{Others}{: Multithreading, Performance Optimization, OOP}
     }}
  \end{itemize}
 \sectionspace
@@ -243,35 +245,47 @@
 \section{Experience}
   \resumeSubHeadingListStart
       \resumeProjectHeading
-           {\titleItem{{Software Engineer}} $|$ \emph{LARION}}{Jun 2022 -- Present}
+           {\titleItem{{Software Engineer}} $|$ \emph{LARION}}{\textbf{Jun 2022 -- Present}}
       \resumeItemListStart
-        \resumeItem{I build high-performance data pipelines that ingest data in various formats (XML, JSON, CSV) and transform it into a structured format for real-time analysis used in high-frequency trading (HFT).}
-        \resumeItem{Skills: C++, Python, Django, FastAPI}
+        \resumeItem{Build high-performance data pipeline using C++ that ingest data in various formats (XML, JSON, CSV,...) and transform it into a structured format for real-time analysis used in high-frequency trading (HFT).}
+        \resumeItem{Handle multiple datasets, each may reach over 5TB in size, minimizing processing time and memory footprint.}
+        \resumeItem{Guarantee near-continuous real-time data processing, to ensure uninterrupted support for downstream trading strategies.}
+        \resumeItem{Collaborate with researchers and portfolio managers to define a user-friendly data output structure.}
+        \resumeItem{Join a newly formed team to develop a user-friendly platform (using Python + Django + FastAPI) for researcher to manage tools and submit requests to a general-purpose data processor.}
+        \resumeItem{Skills: C++, Multithreading, HFT, Python, Django, FastAPI}
         % \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
       \resumeItemListEnd
 
       \resumeProjectHeading
-           {\titleItem{{Software Engineer}} $|$ \emph{OPSWAT}}{Jan 2021 -- Jun 2022}
+           {\titleItem{{Software Engineer}} $|$ \emph{OPSWAT}}{\textbf{Jan 2021 -- Jun 2022}}
       \resumeItemListStart
-        \resumeItem{Developing MetaDefender Drive: A bootable USB device built with C/C++ that scans for viruses and malware on your devices, offering a portable security solution. The project is client-server based application. Backend is written in C/C++}
-        \resumeItem{Skills: Linux, C++, Operating Systems, MongoDB, SQLite}
+        \resumeItem{Develop MetaDefender Drive, a bootable USB device built with C++ that scans for viruses and malware on your devices, offering a portable security solution. The project is client-server based application. Backend is written in C++.}
+        \resumeItem{Use multithreading  for a high-speed file scanning solution. Develop an efficient data structure to verify user machine integrity.}
+        \resumeItem{Provide ongoing maintenance and bug fixes for a tool (written in C++, MFC) that allow users to create bootable USB drives containing OS image file.}
+        \resumeItem{Develop a new creation tool from the ground up using C++ for backend, replacing the outdated tool with a modern user interface and allowing create multi bootable USB devices at the same time.}
+        \resumeItem{Propose a discussion with the team and project manager to evaluate potential new features for the next release based on technical feasibility and development timeline.}
+        \resumeItem{Skills: C++, Multithreading, Linux, Operating Systems, MFC, SQLite, MongoDB}
         % \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
       \resumeItemListEnd
 
 
     \resumeProjectHeading
-           {\titleItem{{Software Engineer}} $|$ \emph{Gameloft}}{Jun 2020 -- Nov 2020}
+           {\titleItem{{Software Engineer}} $|$ \emph{Gameloft}}{\textbf{Jun 2020 -- Nov 2020}}
       \resumeItemListStart
-        \resumeItem{Build an Android game framework (C/C++, Java) for the game team and a separate web crawler (C\#) to collect user feedback.}
-        \resumeItem{Skills: C++, C\#, Java}
+        \resumeItem{Build an Android game framework using C/C++ and Java to port an iOS application to Android, enabling native game development without Java at the game logic level.}
+        \resumeItem{Ensure the smooth operation of a web crawler used for gathering user feedback by performing maintenance and resolving bugs.}
+        \resumeItem{Rebuild web crawler in C\# to address performance, readability, and maintainability issues. Use asynchronous feature of C\# for efficiency and improving code structure. Add checkpoint feature and auto-restart for enhancing robustness.}
+        \resumeItem{Skills: C/C++, C\#, Java, Java JNI}
         % \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
         % \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor. Ut consequat semper viverra nam libero justo laoreet sit amet. Feugiat nisl pretium fusce id velit ut tortor pretium. }
         \resumeItemListEnd
         
     \resumeProjectHeading
-           {\titleItem{{Game Developer Intern}} $|$ \emph{Gameloft}}{Jun 2019 -- Aug 2019}
-      \resumeItemListStart    
+           {\titleItem{{Game Developer Intern}} $|$ \emph{Gameloft}}{\textbf{Jun 2019 -- Aug 2019}}
+    \resumeItemListStart
+    \resumeItem{Reimplement a game in C++ with a focus on core mechanics inspired by an existing game.}
     \resumeItem{Develop a playable hyper-casual game prototype within 2 months with a team of 3 using C/C++ and Cocos2dx}
+    \resumeItem{Contribute to the design of gameplay mechanics, code architecture, and code review procedures through collaboration with team members and a Gameloft game designer.}
         \resumeItem{Skills: C++, C\#, cocos2dx} 
     \resumeItemListEnd
   \resumeSubHeadingListEnd
@@ -294,8 +308,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {VNUHCM - University of Science}{GPA : 8.12/10}
-      {Bachelor's degree in Computer Science}{2016 -- 2020} 
+      {\large VNUHCM - University of Science}{GPA : 8.12/10}
+      {Bachelor's degree in Computer Science}{\textbf{2016 -- 2020}}
     % \resumeSubheading
     %   {University of Utah}{GPA : 3.75}
     %   {BS in Computer Science and Engineering}{August 2012 -- May 2016}
@@ -309,28 +323,28 @@
  \section{Projects}    
      \resumeSubHeadingListStart
         \resumeProjectHeading
-           {\titleItem{\href{https://github.com/ludenstian/autotask}{Autotask}} $|$ \emph{Typescript}}{Oct 2022 -- Present}
+           {\titleItem{\href{https://github.com/ludenstian/autotask}{Autotask}} $|$ \emph{Typescript}}{\textbf{Oct 2022 -- Present}}
             \resumeItemListStart
-            \resumeItem{I'm passionate about developer efficiency! I built and maintain the Autotask extension for VSCode, an open-source tool that helps users automate tasks and customize their coding experience.}
+            \resumeItem{Driven by developer efficiency, I create and maintain Autotask, an open-source VSCode extension that automates tasks and streamlines the coding experience.}
             % \resumeItem{Ut consequat semper viverra nam libero justo laoreet sit amet. Feugiat nisl pretium fusce id velit ut tortor pretium.}
             \resumeItem{Project link: \href{https://github.com/ludenstian/autotask}{https://github.com/ludenstian/autotask}}
            \resumeItemListEnd
        \resumeProjectHeading
-           {\titleItem{\href{https://nhathuy13598.itch.io/break-finger}{Break Finger}} $|$ \emph{Python, Pygame}}{Nov 2018}
+           {\titleItem{\href{https://nhathuy13598.itch.io/break-finger}{Break Finger}} $|$ \emph{Python, Pygame}}{\textbf{Nov 2018}}
             \resumeItemListStart
-            \resumeItem{Born during Game Off 2018: This Python game, built with Pygame, was my creation for the game jam!} 
+            \resumeItem{This game is written in Python using Pygame engine. It is my submission for Game Off 2018.} 
             % \resumeItem{In cursus turpis massa tincidunt dui. Cras pulvinar mattis nunc sed blandit libero volutpat sed. Suspendisse potenti nullam ac tortor. }
             \resumeItem{Project link: \href{https://github.com/nhathuy13598/Break-Finger}{https://github.com/nhathuy13598/Break-Finger}}
            \resumeItemListEnd
        \resumeProjectHeading
-           {\titleItem{Paint Application} $|$ \emph{C\#, SharpGL}}{Feb 2018 -- Mar 2018}
+           {\titleItem{Paint Application} $|$ \emph{C\#, SharpGL}}{\textbf{Feb 2018 -- Mar 2018}}
             \resumeItemListStart
             \resumeItem{This project is about building a paint application in C\#, helping me hone my programming skills.}
            \resumeItemListEnd
         \resumeProjectHeading
-           {\titleItem{FTP Application} $|$ \emph{C/C++}}{Apr 2017 -- May 2017}
+           {\titleItem{FTP Application} $|$ \emph{C/C++}}{\textbf{Apr 2017 -- May 2017}}
             \resumeItemListStart
-            \resumeItem{This C/C++ FTP application provided a practical project to practice my C/C++ skills and explore network programming.}
+            \resumeItem{This C/C++ FTP application provides a practical project to practice my C/C++ skills and explore network programming.}
            \resumeItemListEnd
         % \resumeProjectHeading
         %    {\titleItem{Paint Application} $|$ \emph{C\#, SharpGL}}{Feb 2018 -- Mar 2018}
